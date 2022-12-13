@@ -14,6 +14,6 @@ public interface IProfessorService {
 	
 	List<Professor> getAllProfessor();
 	
-	void updateSalaryById(int professorId, double salary);
+	Professor updateSalaryById(int professorId, double salary);
 	
 }
