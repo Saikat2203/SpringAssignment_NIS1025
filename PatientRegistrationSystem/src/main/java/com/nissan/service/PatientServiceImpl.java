@@ -2,6 +2,8 @@ package com.nissan.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,7 @@ import com.nissan.dao.PatientDao;
 import com.nissan.entity.Patient;
 
 @Service
+@Transactional
 public class PatientServiceImpl implements IPatientService {
 
 	@Autowired
