@@ -41,6 +41,7 @@ public class CustomerController {
 		}
 	}
 	
+	// Get all orders by customer ID
 	@GetMapping("/order/{id}")
 	public ResponseEntity<?> getOrderDetails(@PathVariable int id) {
 		Customer customer = customerService.getCustomerById(id);
